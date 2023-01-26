@@ -11,3 +11,6 @@ Macros can't standalone implement virtual table, so berofe building your project
 > **The implementation of code parser seem to be very buggy and unstable** 
 >
 >  _the idea is just to show avaliability, not implement OOP framework for C programming_
+
+№№№ Example 
+You can find example in VT_Example folder, it is very small Visual Studio solution showing how VT could be used. 
