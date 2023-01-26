@@ -71,10 +71,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <CustomBuildBeforeTargets>BuildGenerateSources</CustomBuildBeforeTargets>
+    <CustomBuildBeforeTargets>
+    </CustomBuildBeforeTargets>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <CustomBuildBeforeTargets>BuildGenerateSources</CustomBuildBeforeTargets>
+    <CustomBuildBeforeTargets>
+    </CustomBuildBeforeTargets>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -118,17 +120,21 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <CustomBuildStep>
-      <Command>python $(ProjectDir)include\vt\vtc.py -src $(ProjectDir)src -o $(ProjectDir)
-</Command>
+      <Command>
+      </Command>
     </CustomBuildStep>
     <CustomBuildStep>
-      <Outputs>$(ProjectDir)vt_impl.c;%(Outputs)</Outputs>
+      <Outputs>
+      </Outputs>
     </CustomBuildStep>
     <CustomBuildStep>
       <RootFolder>
       </RootFolder>
-      <TreatOutputAsContent>true</TreatOutputAsContent>
+      <TreatOutputAsContent>false</TreatOutputAsContent>
     </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>python $(ProjectDir)include\vt\vtc.py -src $(ProjectDir)src -o $(ProjectDir)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -148,17 +154,21 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <CustomBuildStep>
-      <Command>python $(ProjectDir)include\vt\vtc.py -src $(ProjectDir)src -o $(ProjectDir)
-</Command>
+      <Command>
+      </Command>
     </CustomBuildStep>
     <CustomBuildStep>
-      <Outputs>$(ProjectDir)vt_impl.c;%(Outputs)</Outputs>
+      <Outputs>
+      </Outputs>
     </CustomBuildStep>
     <CustomBuildStep>
       <RootFolder>
       </RootFolder>
-      <TreatOutputAsContent>true</TreatOutputAsContent>
+      <TreatOutputAsContent>false</TreatOutputAsContent>
     </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>python $(ProjectDir)include\vt\vtc.py -src $(ProjectDir)src -o $(ProjectDir)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\ExampleClass.h" />
