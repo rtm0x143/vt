@@ -10,7 +10,7 @@ Macros can't standalone implement virtual table, so before building your project
 
 > **The implementation of code parser seem to be very buggy and unstable** 
 >
->  _>  _the idea is just to show availability, not implement OOP framework for C programming_
+> _the idea is just to show ability, not implement OOP framework for C programming_
 
 ### Example 
 You can find example in VT_Example folder, it is very small Visual Studio solution showing how VT could be used. 
